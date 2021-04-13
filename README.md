@@ -164,6 +164,7 @@ En el siguiente método (desactivarCampos) se deshabilita todos los JTextfield p
 En esta clase primero se importan todas las clases y librerías que se ocuparan, en el método agregar y editar se reciben por parámetro 5 datos tipo String posteriormente se hace conexión con la base de datos, en el método agregar, se agregan las variables en la base de datos, y en el método editar se actualiza los campos. Por último, se retorna el método EjecutaSQL.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497402-a8ff8200-9be7-11eb-8509-a79328a19345.png)
+
 ![imagen](https://user-images.githubusercontent.com/71055467/114497406-ae5ccc80-9be7-11eb-84d3-17f51267cce4.png)
 
 En el método eliminar se eliminará un producto, este método retorna lo que contiene el método ejecutaSQL. En el método mostrar se declara la variable rs ResulSet, y se hace una consulta con lavase de datos con el método consultaSQL y se le asigna el valor a la variable rs y por último se retorna la variable rs.
@@ -187,6 +188,7 @@ El método producto retorna un dato tipo ResultSet, primero se crea a variable r
 En esta clase (Proveedores), primero se importa las librerías a utilizar en la dicha clase, también se declaran los componentes que tiene en la ventana. En el constructor se vuelve visible la ventana, y se deshabilita la opción para que el usuario no pueda redimensionar la ventana, además, se llama el método mostrarTabla para que cada vez que se agregue un producto se modifique.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497456-d0eee580-9be7-11eb-966d-4d5deb6bcef3.png)
+
 ![imagen](https://user-images.githubusercontent.com/71055467/114497463-d51b0300-9be7-11eb-80d6-216b2141b64c.png)
 
 En la clase initComponents se programa todos los objetos de nuestra ventana, se programa el tipo y tamaño de letra que tiene el Label y se pone el texto. También se programa la tabla en donde se mostrará los proveedores registrados, se pone el texto que tendrá las cabeceras de nuestra tabla. y por último a la tabla se le agrega un ScrollPanel.
@@ -224,6 +226,7 @@ Aquí se muestra el evento que tiene el botón Eliminar. Primero se invoca el m�
 En esta clase se importan las librerías y clases a utilizar, primero se declaran todos los objetos a utilizar en la ventana, posteriormente se encuentra el constructor que recibe como parámetro un objeto tipo Frame y una variable boolean. Dentro del constructor se invoca el método initComponents y el método inicio, con la línea setLocationRelativeTo hacemos que la ventana aparezca en el centro de la pantalla y por último se hace visible la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497571-10b5cd00-9be8-11eb-9b7f-4d7ce0581a8f.png)
+
 ![imagen](https://user-images.githubusercontent.com/71055467/114497581-157a8100-9be8-11eb-8a42-9157c9610e7c.png)
 
 En el método initComponents se encuentra programado los objetos que tiene la ventana, se programa los JLabel se le da tipo y tamaño de letra, con la línea de código setText se coloca el texto que tendrá el JLabel.
@@ -285,6 +288,7 @@ El método proveedor retorna un dato tipo ResultSet, primero se crea a variable 
 En esta clase primero se importan las librerías y clases a utilizar, y se declaran los objetos de nuestra ventana, en el constructor se programa todo lo relaciono con la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497818-8c177e80-9be8-11eb-94e7-01db9767051a.png)
+
 ![imagen](https://user-images.githubusercontent.com/71055467/114497829-8fab0580-9be8-11eb-9a01-5163d7d307d9.png)
 
 En el método unitComponents se hace la programación de todos los objetos que contiene la ventana.
@@ -333,7 +337,7 @@ El método producto retorna un dato tipo ResultSet, primero se crea a variable r
 
 
 
-**### Explicación De La Base De Datos**
+**Explicación De La Base De Datos**
 
 
 Debido a que en este tema se trabaja de la mano con la Base de Datos y la Programación, es por ello que todo lo anterior está sincronizado con una base de datos que se elaboró en la página de phpMyAdmin, en breve se describe lo que se hizo en ella.
@@ -356,7 +360,7 @@ Los datos que contiene cada una de ellas se mostrará más adelante.
 
 
 
-**### Resultados**
+**Resultados**
 
 
 
