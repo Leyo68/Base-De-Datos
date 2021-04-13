@@ -30,11 +30,13 @@ JPanel:
 
 
 **Clase Configuración**
+
 En esta clase se declaran los variables que se utilizaran en la ejecución del programa, todas las variables se declaran en static, ya que no se tiene que instanciar con la clase para poder utilizarlos. Se declaran dos variables tipo string: id y titulo; también una variable acción que servirá como bandera para saber qué acción estamos ejecutando y finalmente una variable tipo MySQL llamada conexión, se declara nulo.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114496988-b8320000-9be6-11eb-87b8-cc43e2339d69.png)
 
 **Clase MySQL**
+
 En esta clase se encuentran las líneas de código que servirán para hacer la conexión con la base de datos, primero se importa las librerías necesarias que se utilizarán. También se declaran unas variables como final la variable llamada BD es el nombre de la base de dato, la variable USER es el usuario de nuestra base de datos como estamos trabajando con xampp el usuario es root, la variable PASS es donde contiene la contraseña, la variable SERVER contiene la dirección IP o el localhost, por último, se encuentra la variable tipo Connection llamada conexion.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497001-c253fe80-9be6-11eb-90d6-34edcedbc349.png)
@@ -53,11 +55,13 @@ En esta clase también se tiene el método getter de la variable conexión.
 ![imagen](https://user-images.githubusercontent.com/71055467/114497052-e0b9fa00-9be6-11eb-9940-3344df338e3c.png)
 
 **Clase BaseDeDatos**
+
 Esta es la clase principal, en donde primero se importan las clases Configuracion y MySQL, en el método main se crea a instancia con la clase MySQL y se lama la clase llamada principal.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497072-e9aacb80-9be6-11eb-8d33-39e5fc53b8d9.png)
 
 **Clase Principal**
+
 En esta clase hereda de la clase JFrame, se tiene un constructor, dentro del constructor se invoca el método unitComponents, también se le pone un título a la ventana, se hace visible y se bloquea la opción para que el usuario pueda redimensionar la ventana. Además, se declara los botones y el Label que se ocuparan en esta clase.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497091-f3343380-9be6-11eb-8c47-518a8f5ce1e3.png)
@@ -75,6 +79,7 @@ Por último, la clase Principal se programa los eventos que tendrán cada botone
 ![imagen](https://user-images.githubusercontent.com/71055467/114497119-07783080-9be7-11eb-903a-568f1fe133cf.png)
 
 **Clase Productos**
+
 La clase productos hereda de la clase JFrame, al principio se importa las librerías que se utilizaran. En el constructor se llama el método initcomponents, se vuelve visible la ventana, y se deshabilita la opción para que el usuario no pueda redimensionar la ventana, además, se llama el método mostrarTabla para que cada vez que se agregue un producto se modifique. Asimismo, se declararon los componentes que tendrá la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497134-0f37d500-9be7-11eb-9f8e-3754b3edcb6d.png)
@@ -111,9 +116,11 @@ En el método llamado mostrarTabla se encuentra el código que se hará para act
 ![imagen](https://user-images.githubusercontent.com/71055467/114497244-51f9ad00-9be7-11eb-99d2-8a0c4682fce9.png)
 
 **Clase GestionProducto**
+
 En esta clase se importan las librerías y clases a utilizar, primero se declaran todos los objetos a utilizar en la ventana, posteriormente se encuentra el constructor que recibe como parámetro un objeto tipo Frame y una variable boolean. Dentro del constructor se invoca el método initComponents y el método inicio, con la línea setLocationRelativeTo hacemos que la ventana aparezca en el centro de la pantalla y por último se hace visible la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497264-5a51e800-9be7-11eb-89b6-c33a87ad83e5.png)
+
 ![imagen](https://user-images.githubusercontent.com/71055467/114497275-5e7e0580-9be7-11eb-84a0-31af9b3b8000.png)
 
 En el método initComponents se encuentra programado los objetos que tiene la ventana, se programa los JLabel se le da tipo y tamaño de letra, con la línea de código setText se coloca el texto que tendrá el JLabel.
@@ -153,6 +160,7 @@ En el siguiente método (desactivarCampos) se deshabilita todos los JTextfield p
 ![imagen](https://user-images.githubusercontent.com/71055467/114497386-9edd8380-9be7-11eb-80fc-0b3bc9a149a2.png)
 
 **Clase ControlProducto**
+
 En esta clase primero se importan todas las clases y librerías que se ocuparan, en el método agregar y editar se reciben por parámetro 5 datos tipo String posteriormente se hace conexión con la base de datos, en el método agregar, se agregan las variables en la base de datos, y en el método editar se actualiza los campos. Por último, se retorna el método EjecutaSQL.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497402-a8ff8200-9be7-11eb-8509-a79328a19345.png)
@@ -175,6 +183,7 @@ El método producto retorna un dato tipo ResultSet, primero se crea a variable r
 ![imagen](https://user-images.githubusercontent.com/71055467/114497442-c6cce700-9be7-11eb-8b2f-87ff876d8215.png)
 
 **Clase Proveedores**
+
 En esta clase (Proveedores), primero se importa las librerías a utilizar en la dicha clase, también se declaran los componentes que tiene en la ventana. En el constructor se vuelve visible la ventana, y se deshabilita la opción para que el usuario no pueda redimensionar la ventana, además, se llama el método mostrarTabla para que cada vez que se agregue un producto se modifique.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497456-d0eee580-9be7-11eb-966d-4d5deb6bcef3.png)
@@ -211,6 +220,7 @@ Aquí se muestra el evento que tiene el botón Eliminar. Primero se invoca el m�
 ![imagen](https://user-images.githubusercontent.com/71055467/114497549-098ebf00-9be8-11eb-83c6-b2aeb3a5fb79.png)
 
 **Clase GestionProveedores**
+
 En esta clase se importan las librerías y clases a utilizar, primero se declaran todos los objetos a utilizar en la ventana, posteriormente se encuentra el constructor que recibe como parámetro un objeto tipo Frame y una variable boolean. Dentro del constructor se invoca el método initComponents y el método inicio, con la línea setLocationRelativeTo hacemos que la ventana aparezca en el centro de la pantalla y por último se hace visible la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497571-10b5cd00-9be8-11eb-9b7f-4d7ce0581a8f.png)
@@ -253,6 +263,7 @@ En el siguiente método (desactivarCampos) se deshabilita todos los JTextfield p
 ![imagen](https://user-images.githubusercontent.com/71055467/114497728-60949400-9be8-11eb-9ab4-155ea5f8ad2c.png)
 
 **Clase ControlProveedor**
+
 En esta clase primero se importan todas las clases y librerías que se ocuparan, en el método agregar y editar se reciben por parámetro 5 datos tipo String posteriormente se hace conexión con la base de datos, en el método agregar, se agregan las variables en la base de datos, y en el método editar se actualiza los campos. Por último, se retorna el método EjecutaSQL.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497760-71450a00-9be8-11eb-9c36-1fa922a82b47.png)
@@ -270,6 +281,7 @@ El método proveedor retorna un dato tipo ResultSet, primero se crea a variable 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497789-81f58000-9be8-11eb-9cf0-035099cc7e7e.png)
 
 **Clase Clientes**
+
 En esta clase primero se importan las librerías y clases a utilizar, y se declaran los objetos de nuestra ventana, en el constructor se programa todo lo relaciono con la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497818-8c177e80-9be8-11eb-94e7-01db9767051a.png)
@@ -284,6 +296,7 @@ Aquí se encuentra los eventos de cada botón.
 ![imagen](https://user-images.githubusercontent.com/71055467/114497858-9a659a80-9be8-11eb-84d8-f533fd67e274.png)
 
 **Clase GestionCliente**
+
 En esta clase se importan las librerías y clases a utilizar, primero se declaran todos los objetos a utilizar en la ventana. Dentro del constructor con la línea setLocationRelativeTo hacemos que la ventana aparezca en el centro de la pantalla y por último se hace visible la ventana.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497878-a3ef0280-9be8-11eb-83d7-0db615e592f4.png)
@@ -305,6 +318,7 @@ El método eliminarCliente se invoca al momento de eliminar un cliente, y el mé
 ![imagen](https://user-images.githubusercontent.com/71055467/114497924-ba955980-9be8-11eb-8022-0771f67a517b.png)
 
 **Clase ControlCliente**
+
 En esta clase primero se importan todas las clases y librerías que se ocuparan, en el método agregar y editar se reciben por parámetro 5 datos tipo String posteriormente se hace conexión con la base de datos, en el método agregar, se agregan las variables en la base de datos, y en el método editar se actualiza los campos. Por último, se retorna el método EjecutaSQL.
 
 ![imagen](https://user-images.githubusercontent.com/71055467/114497949-c54fee80-9be8-11eb-8a11-3acfc78d303d.png)
