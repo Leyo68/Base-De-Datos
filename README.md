@@ -1,6 +1,6 @@
 # Base De Datos
 
-**### Explicación Del Código Fuente**
+**Explicación Del Código Fuente**
 
 En el proyecto se crearon dos paquetes:
 Base de datos:
@@ -350,3 +350,4 @@ Pasa lo mismo con cada uno de los botones que se encuentran dentro de esta venta
 
 En conclusión, al programa realizado y explicado anteriormente en este documento, podemos decir que saber bien la interfaz es importante, ya que esta contempla el diseño que le dimos y también los componentes que utilizamos, para llevar a cabo este ejemplo.
 Ya que los lenguajes no traen incorporada una base de datos y es por este el motivo por el cual realizamos una conexión al lenguaje de programación con sistema gestor de base de datos. De igual forma nos dimos cuenta que una base de datos es una conexión organizada de datos, y también existen diferentes formas de organizarlos de manera que nos facilite el acceso y manipulación de la información que esta agregada.
+
